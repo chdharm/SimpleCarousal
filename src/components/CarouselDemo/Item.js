@@ -18,6 +18,8 @@ const Item = ({ movie }) => (
           })}
         >
           <img src={movie.image} alt="" />
+          Name - {movie.title}
+          Price - {movie.price}
           <ShowDetailsButton onClick={() => onSelectSlide(movie)} />
           {isActive && <Mark />}
         </div>
